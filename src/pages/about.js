@@ -1,10 +1,12 @@
 import React from "react"
+import { Link } from "gatsby"
 import Header from "../components/header"
+import "../styles/about.css"
 
 export default () => (
-  <div style={{ color: `teal` }}>
-    <Header headerText="About Gatsby" />
-    <Header headerText="It's pretty cool" />
+  <div className="about">
+    <Link to="/">Home</Link>
+    <Header headerText="Hello hahahahah!" />
     <p>Such wow. Very React.</p>
   </div>
 )
