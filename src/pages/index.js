@@ -1,6 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-import Header from "../components/header"
 import styles from "../styles/index.module.css"
 import Layout from "../components/layout"
 
@@ -17,11 +15,7 @@ const User = props => (
 export default () => (
   <Layout>
     <section className="index">
-      <Link to="contact/">Contact</Link>
-      <Link to="about/">About</Link>
-      <Link to="typography/">typography</Link>
-      <Header headerText="Hello Gatsby!" />
-      <p>What a world.</p>
+      <p>INDEXページ</p>
       <img src="https://source.unsplash.com/random/400x200" alt="" />
       <h1>About CSS Modules</h1>
       <p>CSS Modules are cool</p>
