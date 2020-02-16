@@ -15,24 +15,31 @@ const User = props => (
   </div>
 )
 
+const Index = props => (
+  <section className={styles.index}></section>
+)
+
 export default () => (
   <Container>
-    <Link to="contact/">Contact</Link>
-    <Link to="about/">About</Link>
-    <Header headerText="Hello Gatsby!" />
-    <p>What a world.</p>
-    <img src="https://source.unsplash.com/random/400x200" alt="" />
-    <h1>About CSS Modules</h1>
-    <p>CSS Modules are cool</p>
-    <User
-      username="Jane Doe"
-      avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
-      excerpt="I'm Jane Doe. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    />
-    <User
-      username="Bob Smith"
-      avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
-      excerpt="I'm Bob Smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    />
+    <section className="index">
+      <Link to="contact/">Contact</Link>
+      <Link to="about/">About</Link>
+      <Link to="typography/">typography</Link>
+      <Header headerText="Hello Gatsby!" />
+      <p>What a world.</p>
+      <img src="https://source.unsplash.com/random/400x200" alt="" />
+      <h1>About CSS Modules</h1>
+      <p>CSS Modules are cool</p>
+      <User
+        username="Jane Doe"
+        avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
+        excerpt="I'm Jane Doe. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      />
+      <User
+        username="Bob Smith"
+        avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
+        excerpt="I'm Bob Smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      />
+    </section>
   </Container>
 )

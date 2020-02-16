@@ -3,3 +3,7 @@ a {
   color: rebeccapurple;
   margin: 10px;
 }
+
+section.index {
+  background: rgb(248, 216, 216);
+}
