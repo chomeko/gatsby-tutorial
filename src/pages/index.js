@@ -1,9 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import Header from "../components/header"
-import Container from "../components/container"
 import styles from "../styles/index.module.css"
-//import Layout from "../components/layout"
+import Layout from "../components/layout"
 
 const User = props => (
   <div className={styles.user}>
@@ -15,12 +14,8 @@ const User = props => (
   </div>
 )
 
-const Index = props => (
-  <section className={styles.index}></section>
-)
-
 export default () => (
-  <Container>
+  <Layout>
     <section className="index">
       <Link to="contact/">Contact</Link>
       <Link to="about/">About</Link>
@@ -41,5 +36,5 @@ export default () => (
         excerpt="I'm Bob Smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
       />
     </section>
-  </Container>
+  </Layout>
 )
